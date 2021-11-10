@@ -1,0 +1,5671 @@
+ship = XLS Max Spec
+version = 1.4.1
+description = All the goodies
+type = None
+size = 11.1263275,59.3996162,11.1263504
+persistentId = 2193949913
+rot = 0,0,0,0
+missionFlag = 
+vesselType = Debris
+PART
+{
+	part = TALUS_4293976056
+	partName = Part
+	persistentId = 794683611
+	pos = 1.64007163,45.6238403,-1.07572865
+	attPos = 0,0,0
+	attPos0 = 1.64007163,45.6238403,-1.07572865
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = XKK.AV.RL-10CX_4294363484
+	link = XKK.AV.RL-10CX_4294355326
+	link = XKK.AV.RL-10CX_4294350342
+	link = XKK.AV.RL-10CX_4294346946
+	link = X84NEWTALUSXX2cx_4293912582
+	attN = bottom,X84NEWTALUSXX2cx_4293912582_0|-7.8|0
+	attN = 1,XKK.AV.RL-10CX_4294346946_-1.24|-5.14|-1.24
+	attN = 2,XKK.AV.RL-10CX_4294350342_1.24|-5.14|-1.24
+	attN = 3,XKK.AV.RL-10CX_4294363484_-1.24|-5.14|1.24
+	attN = 4,XKK.AV.RL-10CX_4294355326_1.24|-5.14|1.24
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		standaloneToggle = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		actuatorModeCycle = 0
+		authorityLimiter = 100
+		stateString = Active
+		stagingEnabled = True
+		WheelState = Active
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			CycleAction
+			{
+				actionGroup = None
+			}
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 1500
+		maxAmount = 1500
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 500
+		maxAmount = 500
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 7000
+		maxAmount = 7000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 8555
+		maxAmount = 8555
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = XKK.AV.RL-10CX_4294363484
+	partName = Part
+	persistentId = 2047569552
+	pos = 0.40007174,39.3213348,0.164272189
+	attPos = 0,0,0
+	attPos0 = -1.23999977,-6.30250216,1.24000025
+	rot = 0,0.923879564,0,0.382683426
+	attRot = 0,0.923879564,0,0.382683486
+	attRot0 = 0,0.923879564,0,0.382683426
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 3
+	resPri = 0
+	dstg = 2
+	sidx = 0
+	sqor = 2
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,TALUS_4293976056_0|1.1625|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = XKK.AV.RL-10CX_4294355326
+	partName = Part
+	persistentId = 822321849
+	pos = 2.88007236,39.3213348,0.164273024
+	attPos = 0,0,0
+	attPos0 = 1.24000061,-6.30250216,1.24000108
+	rot = 0,0.923879564,0,-0.382683486
+	attRot = 0,0.923879564,0,-0.382683486
+	attRot0 = 0,0.923879564,0,-0.382683486
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 3
+	resPri = 0
+	dstg = 2
+	sidx = 1
+	sqor = 2
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,TALUS_4293976056_0|1.1625|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = XKK.AV.RL-10CX_4294350342
+	partName = Part
+	persistentId = 2803187189
+	pos = 2.88007164,39.3213348,-2.31572962
+	attPos = 0,0,0
+	attPos0 = 1.23999989,-6.30250216,-1.24000037
+	rot = 0,0.382683337,0,-0.923879623
+	attRot = 0,0.382683367,0,-0.923879564
+	attRot0 = 0,0.382683337,0,-0.923879623
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 3
+	resPri = 0
+	dstg = 2
+	sidx = 2
+	sqor = 2
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,TALUS_4293976056_0|1.1625|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = XKK.AV.RL-10CX_4294346946
+	partName = Part
+	persistentId = 1920928877
+	pos = 0.400070906,39.3213348,-2.31573033
+	attPos = 0,0,0
+	attPos0 = -1.24000061,-6.30250216,-1.24000108
+	rot = 0,0.382683456,0,0.923879564
+	attRot = 0,0.382683516,0,0.923879623
+	attRot0 = 0,0.382683456,0,0.923879564
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 3
+	resPri = 0
+	dstg = 2
+	sidx = 3
+	sqor = 2
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,TALUS_4293976056_0|1.1625|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = X84NEWTALUSXX2cx_4293912582
+	partName = Part
+	persistentId = 252443107
+	pos = 1.64007163,37.3238297,-1.07572865
+	attPos = 0,0,0
+	attPos0 = 0,-8.30000877,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 3
+	resPri = 0
+	dstg = 3
+	sidx = 4
+	sqor = 2
+	sepI = 2
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = XSLSXPANDXMLS_4294288654
+	attN = bottom,XSLSXPANDXMLS_4294288654_0|-0.1|0
+	attN = top,TALUS_4293976056_0|0.5|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		actuatorModeCycle = 0
+		authorityLimiter = 100
+		stateString = Active
+		stagingEnabled = True
+		WheelState = Active
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			CycleAction
+			{
+				actionGroup = None
+			}
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		standaloneToggle = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = XSLSXPANDXMLS_4294288654
+	partName = Part
+	persistentId = 651789246
+	pos = 1.64007163,32.623806,-1.07572865
+	attPos = 0,0,0
+	attPos0 = 0,-4.69999695,0
+	rot = 0,0.382683426,0,0.923879564
+	attRot = 0,0.382683486,0,0.923879623
+	attRot0 = 0,0.382683486,0,0.923879623
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 3
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = MonkeyCargoBoosterADJ_4294288618
+	attN = top,X84NEWTALUSXX2cx_4293912582_0|4.6|0
+	attN = bottom,MonkeyCargoBoosterADJ_4294288618_0|-4.71|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 4299.2998046875
+		maxAmount = 4299.2998046875
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 5254
+		maxAmount = 5254.7001953125
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = MonkeyCargoBoosterADJ_4294288618
+	partName = Part
+	persistentId = 2118773001
+	pos = 1.64007163,26.4456844,-1.07572865
+	attPos = 0,0,0
+	attPos0 = 0,-6.17800808,0
+	rot = 0,0.382683635,0,0.923879445
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 4
+	sidx = 2
+	sqor = 5
+	sepI = 2
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = chakaradialDecoupler1-2_4294288350
+	link = chakaradialDecoupler1-2_4294287632
+	link = chakaradialDecoupler1-2_4294286914
+	link = chakaradialDecoupler1-2_4294286196
+	link = CHAKAradialDecouplerXX_4293987528
+	link = CHAKAradialDecouplerXX_4293958024
+	link = CHAKAradialDecouplerXX_4293957968
+	link = CHAKAradialDecouplerXX_4293957912
+	attN = top,XSLSXPANDXMLS_4294288654_0|1.468|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		hibernation = False
+		hibernateOnWarp = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			MakeReferenceToggle
+			{
+				actionGroup = None
+			}
+			HibernateToggle
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		actuatorModeCycle = 0
+		authorityLimiter = 100
+		stateString = Active
+		stagingEnabled = True
+		WheelState = Active
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			CycleAction
+			{
+				actionGroup = None
+			}
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		standaloneToggle = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 25080
+		maxAmount = 25080
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 30647
+		maxAmount = 30647
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 350
+		maxAmount = 350
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = chakaradialDecoupler1-2_4294288350
+	partName = Part
+	persistentId = 1847892975
+	pos = -0.529895067,8.14400101,-3.24570322
+	attPos = 0,0,0
+	attPos0 = -1.295153E-07,-18.30163,-3.06877708
+	rot = -7.72869839E-08,0.382683516,1.86587471E-07,-0.923879623
+	attRot = 0,0,0,1
+	attRot0 = -1.42807707E-07,0.707106829,1.42807806E-07,-0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 5
+	sidx = 0
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = xKWsrbGlobeX10Lx_4294288308
+	sym = chakaradialDecoupler1-2_4294287632
+	sym = chakaradialDecoupler1-2_4294286914
+	sym = chakaradialDecoupler1-2_4294286196
+	srfN = srfAttach,MonkeyCargoBoosterADJ_4294288618
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = xKWsrbGlobeX10Lx_4294288308
+	partName = Part
+	persistentId = 2952354821
+	pos = -1.55991173,7.72227859,-4.27572346
+	attPos = 0,0,0
+	attPos0 = -1.45664597,-0.421719193,3.55370588E-07
+	rot = -7.94001451E-08,-0.923879802,-1.91689082E-07,0.382683158
+	attRot = 0,0,0,1
+	attRot0 = 3.90393495E-09,0.707106829,3.90391497E-09,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = 0
+	sqor = 5
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = XstrutConnectorMediumX_4294288214
+	link = XstrutConnectorMediumX_4294288152
+	link = XNP.lft.W375SRB_4294288090
+	link = xKosmos.SepRetroxMLS_4294288024
+	link = xKosmos.SepRetroxDUNA_4280588886
+	link = xKosmos.SepRetroxDUNA_4280586304
+	link = xKosmos.SepRetrox_4294131734
+	sym = xKWsrbGlobeX10Lx_4294287590
+	sym = xKWsrbGlobeX10Lx_4294286872
+	sym = xKWsrbGlobeX10Lx_4294286154
+	srfN = srfAttach,chakaradialDecoupler1-2_4294288350
+	attN = top,XNP.lft.W375SRB_4294288090_0|16.18125|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 48000
+		maxAmount = 48000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = XstrutConnectorMediumX_4294288214
+	partName = CompoundPart
+	persistentId = 3521698408
+	pos = -0.621835232,20.0099354,-3.33764863
+	attPos = 0,0,0
+	attPos0 = -8.83283576E-07,12.2875605,-1.32661104
+	rot = -2.32165221E-05,0.923879623,-9.61660044E-06,0.382683575
+	attRot = 0,0,0,1
+	attRot0 = -1.79158596E-05,0.707106829,1.79158505E-05,-0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = XstrutConnectorMediumX_4294287496
+	sym = XstrutConnectorMediumX_4294286778
+	sym = XstrutConnectorMediumX_4294286060
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294288308
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294288618
+		pos = -0.108889721,-0.00215700711,0.000210233062
+		rot = 0,-0.130525753,2.45948249E-05,0.991444945
+		dir = -0.99980545,-0.0196316577,0.00193375745
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = XstrutConnectorMediumX_4294288152
+	partName = CompoundPart
+	persistentId = 4056859051
+	pos = -0.621232271,1.56747437,-3.33703971
+	attPos = 0,0,0
+	attPos0 = -8.82540689E-07,-6.1545372,-1.32748103
+	rot = -2.32165221E-05,0.923879623,-9.61660044E-06,0.382683575
+	attRot = 0,0,0,1
+	attRot0 = -1.79158596E-05,0.707106829,1.79158596E-05,-0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = XstrutConnectorMediumX_4294287434
+	sym = XstrutConnectorMediumX_4294286716
+	sym = XstrutConnectorMediumX_4294285998
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294288308
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294288618
+		pos = -0.108033068,-0.00249265716,0.000232167571
+		rot = 0,-0.130525753,2.45948249E-05,0.991444945
+		dir = -0.999739647,-0.0227169748,0.00216310006
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = XNP.lft.W375SRB_4294288090
+	partName = Part
+	persistentId = 2099442903
+	pos = -1.5599103,24.9536991,-4.27571726
+	attPos = 0,0,0
+	attPos0 = -5.0575818E-07,17.2312393,9.0564572E-07
+	rot = -2.19222883E-07,-0.382683069,9.080496E-08,-0.923879862
+	attRot = 0,0,0,1
+	attRot0 = -1.69057395E-13,-1,2.98023402E-08,-5.08969322E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = XKW2mNoseConeX_4294288058
+	sym = XNP.lft.W375SRB_4294287372
+	sym = XNP.lft.W375SRB_4294286654
+	sym = XNP.lft.W375SRB_4294285936
+	attN = top,XKW2mNoseConeX_4294288058_0|1.05|0
+	attN = bottom,xKWsrbGlobeX10Lx_4294288308_0|-1.05|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = XKW2mNoseConeX_4294288058
+	partName = Part
+	persistentId = 3214705083
+	pos = -1.55991316,26.003643,-4.27571869
+	attPos = 0,0,0
+	attPos0 = -3.37174811E-07,1.049999,1.01164596E-06
+	rot = -2.19222841E-07,-0.382683069,9.08051021E-08,-0.923879862
+	attRot = 0,0,0,1
+	attRot0 = 1.06165396E-28,9.44808942E-09,-1.39946802E-21,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = XKW2mNoseConeX_4294287340
+	sym = XKW2mNoseConeX_4294286622
+	sym = XKW2mNoseConeX_4294285904
+	attN = bottom,XNP.lft.W375SRB_4294288090_0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxMLS_4294288024
+	partName = Part
+	persistentId = 3244419482
+	pos = -0.62018919,-5.84121704,-3.33600116
+	attPos = 0,0,0
+	attPos0 = -1.21845403E-06,-13.5632095,-1.32895195
+	rot = -0.245990843,-0.29314661,0.593875766,0.707718492
+	attRot = 0,0,0.642787695,0.766044497
+	attRot0 = 0.454533309,0.541663587,0.454533309,0.541663587
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 1
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxMLS_4294287306
+	sym = xKosmos.SepRetroxMLS_4294286588
+	sym = xKosmos.SepRetroxMLS_4294285870
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294288308
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 2
+		maxAmount = 2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxDUNA_4280588886
+	partName = Part
+	persistentId = 2765912165
+	pos = -1.56615806,23.6564045,-2.90914726
+	attPos = 0,0,0
+	attPos0 = 0.970723629,15.9341297,-0.961884975
+	rot = 9.83476639E-07,0.707090795,-0.707122982,5.51342964E-07
+	attRot = -0.499999911,0.499999911,-0.499999911,-0.499999911
+	attRot0 = -0.653296411,0.270591915,-0.270604193,-0.653266728
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 2
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxDUNA_4280590844
+	sym = xKosmos.SepRetroxDUNA_4280588956
+	sym = xKosmos.SepRetroxDUNA_4280588816
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294288308
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxDUNA_4280586304
+	partName = Part
+	persistentId = 44031620
+	pos = -0.200992823,23.65275,-4.28196526
+	attPos = 0,0,0
+	attPos0 = -0.965313673,15.93046,-0.956474781
+	rot = 0.500011146,-0.499988794,-0.500011086,-0.499989301
+	attRot = -0.499999911,0.499999911,0.499999911,0.499999911
+	attRot0 = -0.270604014,-0.653267086,-0.653295815,0.270592093
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 3
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxDUNA_4280588250
+	sym = xKosmos.SepRetroxDUNA_4280586374
+	sym = xKosmos.SepRetroxDUNA_4280586234
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294288308
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xKosmos.SepRetrox_4294131734
+	partName = Part
+	persistentId = 4233228531
+	pos = -0.615886927,-5.52049255,-3.33169532
+	attPos = 0,0,0
+	attPos0 = -9.16414251E-07,-13.2426844,-1.33505464
+	rot = 0.65329814,-0.65326488,0.270605415,-0.270591319
+	attRot = -0.707106709,0.707106709,0,0
+	attRot0 = 0.500012934,-0.499987096,-0.500012875,0.499987125
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 4
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetrox_4294134740
+	sym = xKosmos.SepRetrox_4294131808
+	sym = xKosmos.SepRetrox_4294131660
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294288308
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 4
+		maxAmount = 4
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = chakaradialDecoupler1-2_4294287632
+	partName = Part
+	persistentId = 722136918
+	pos = -0.529890299,8.14400101,1.09424472
+	attPos = 0,0,0
+	attPos0 = -3.06877589,-18.30163,2.92493894E-07
+	rot = 7.72870692E-08,-0.382683635,1.86587229E-07,-0.923879445
+	attRot = 0,0,0,1
+	attRot0 = 1.64445907E-14,-6.62080382E-08,2.01960702E-07,-1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 5
+	sidx = 0
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = xKWsrbGlobeX10Lx_4294287590
+	sym = chakaradialDecoupler1-2_4294288350
+	sym = chakaradialDecoupler1-2_4294286914
+	sym = chakaradialDecoupler1-2_4294286196
+	srfN = srfAttach,MonkeyCargoBoosterADJ_4294288618
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = xKWsrbGlobeX10Lx_4294287590
+	partName = Part
+	persistentId = 19642401
+	pos = -1.55990434,7.72232437,2.12425971
+	attPos = 0,0,0
+	attPos0 = -1.45664406,-0.421696305,2.17288999E-07
+	rot = -1.91687988E-07,-0.382683516,-7.93999106E-08,0.923879623
+	attRot = 0,0,0,1
+	attRot0 = 3.90393406E-09,0.707106888,3.90391497E-09,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = 0
+	sqor = 5
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = XstrutConnectorMediumX_4294287496
+	link = XstrutConnectorMediumX_4294287434
+	link = XNP.lft.W375SRB_4294287372
+	link = xKosmos.SepRetroxMLS_4294287306
+	link = xKosmos.SepRetroxDUNA_4280588956
+	link = xKosmos.SepRetroxDUNA_4280586374
+	link = xKosmos.SepRetrox_4294131808
+	sym = xKWsrbGlobeX10Lx_4294288308
+	sym = xKWsrbGlobeX10Lx_4294286872
+	sym = xKWsrbGlobeX10Lx_4294286154
+	srfN = srfAttach,chakaradialDecoupler1-2_4294287632
+	attN = top,XNP.lft.W375SRB_4294287372_0|16.18125|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 48000
+		maxAmount = 48000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = XstrutConnectorMediumX_4294287496
+	partName = CompoundPart
+	persistentId = 3956933930
+	pos = -0.621825933,20.0099545,1.18617463
+	attPos = 0,0,0
+	attPos0 = -8.83283576E-07,12.2875605,-1.32661104
+	rot = -2.32166367E-05,0.923879862,9.61662681E-06,-0.382683069
+	attRot = 0,0,0,1
+	attRot0 = -1.79158596E-05,0.707106829,1.79158505E-05,-0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = XstrutConnectorMediumX_4294288214
+	sym = XstrutConnectorMediumX_4294286778
+	sym = XstrutConnectorMediumX_4294286060
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294287590
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294288618
+		pos = -0.108867511,-0.00215700595,0.000212363826
+		rot = 0,-0.130525514,2.45283281E-05,0.991444945
+		dir = -0.99980545,-0.0196316577,0.00193375745
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = XstrutConnectorMediumX_4294287434
+	partName = CompoundPart
+	persistentId = 1539630179
+	pos = -0.621216536,1.56752014,1.18557191
+	attPos = 0,0,0
+	attPos0 = -8.82540689E-07,-6.1545372,-1.32748103
+	rot = -2.32166367E-05,0.923879862,9.61662681E-06,-0.382683069
+	attRot = 0,0,0,1
+	attRot0 = -1.79158596E-05,0.707106829,1.79158596E-05,-0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = XstrutConnectorMediumX_4294288152
+	sym = XstrutConnectorMediumX_4294286716
+	sym = XstrutConnectorMediumX_4294285998
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294287590
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294288618
+		pos = -0.108014554,-0.00249265623,0.000233940693
+		rot = 0,-0.130525514,2.45283281E-05,0.991444945
+		dir = -0.999739647,-0.0227169748,0.00216310006
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = XNP.lft.W375SRB_4294287372
+	partName = Part
+	persistentId = 1740429023
+	pos = -1.55989528,24.9536991,2.12425113
+	attPos = 0,0,0
+	attPos0 = -5.0575818E-07,17.2312393,9.0564572E-07
+	rot = -9.08045479E-08,-0.923879147,2.19221917E-07,-0.382684588
+	attRot = 0,0,0,1
+	attRot0 = -1.69057395E-13,-1,2.98023402E-08,-5.08969322E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = XKW2mNoseConeX_4294287340
+	sym = XNP.lft.W375SRB_4294288090
+	sym = XNP.lft.W375SRB_4294286654
+	sym = XNP.lft.W375SRB_4294285936
+	attN = top,XKW2mNoseConeX_4294287340_0|1.05|0
+	attN = bottom,xKWsrbGlobeX10Lx_4294287590_0|-1.05|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = XKW2mNoseConeX_4294287340
+	partName = Part
+	persistentId = 2317151620
+	pos = -1.55989528,26.0036659,2.12425113
+	attPos = 0,0,0
+	attPos0 = -3.37174811E-07,1.049999,1.01164596E-06
+	rot = -9.08046118E-08,-0.923879147,2.19222159E-07,-0.382684588
+	attRot = 0,0,0,1
+	attRot0 = 1.06165396E-28,9.44808942E-09,-1.39946802E-21,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = XKW2mNoseConeX_4294288058
+	sym = XKW2mNoseConeX_4294286622
+	sym = XKW2mNoseConeX_4294285904
+	attN = bottom,XNP.lft.W375SRB_4294287372_0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxMLS_4294287306
+	partName = Part
+	persistentId = 2879526575
+	pos = -0.620180368,-5.84120178,1.18453026
+	attPos = 0,0,0
+	attPos0 = -1.21845403E-06,-13.5632095,-1.32895195
+	rot = 0.245991424,0.293145746,0.593876779,0.707717717
+	attRot = 0,0,0.642787695,0.766044497
+	attRot0 = 0.454533309,0.541663587,0.454533309,0.541663587
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 1
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxMLS_4294288024
+	sym = xKosmos.SepRetroxMLS_4294286588
+	sym = xKosmos.SepRetroxMLS_4294285870
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294287590
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 2
+		maxAmount = 2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxDUNA_4280588956
+	partName = Part
+	persistentId = 337090949
+	pos = -0.193330526,23.6564503,2.13050294
+	attPos = 0,0,0
+	attPos0 = 0.97072351,15.9341297,-0.961884975
+	rot = -0.500011444,0.499988288,-0.500011384,-0.499989212
+	attRot = -0.499999911,0.499999911,-0.499999911,-0.499999911
+	attRot0 = -0.653296411,0.270591915,-0.270604193,-0.653266728
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 2
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxDUNA_4280590844
+	sym = xKosmos.SepRetroxDUNA_4280588886
+	sym = xKosmos.SepRetroxDUNA_4280588816
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294287590
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxDUNA_4280586374
+	partName = Part
+	persistentId = 1230482100
+	pos = -1.56614685,23.6527805,0.765329957
+	attPos = 0,0,0
+	attPos0 = -0.965313673,15.93046,-0.956474483
+	rot = -3.27825546E-07,-0.707091391,-0.707122386,1.34110451E-07
+	attRot = -0.499999911,0.499999911,0.499999911,0.499999911
+	attRot0 = -0.270604014,-0.653267205,-0.653295815,0.270592213
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 3
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxDUNA_4280588250
+	sym = xKosmos.SepRetroxDUNA_4280586304
+	sym = xKosmos.SepRetroxDUNA_4280586234
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294287590
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xKosmos.SepRetrox_4294131808
+	partName = Part
+	persistentId = 3407018024
+	pos = -0.615874767,-5.52044678,1.18023181
+	attPos = 0,0,0
+	attPos0 = 5.77003618E-07,-13.2426844,-1.33505559
+	rot = 0.653298199,-0.653265059,-0.270604998,0.27059108
+	attRot = -0.707106709,0.707106709,0,0
+	attRot0 = 0.500012934,-0.499987185,-0.500012934,0.499987096
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 4
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetrox_4294134740
+	sym = xKosmos.SepRetrox_4294131734
+	sym = xKosmos.SepRetrox_4294131660
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294287590
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 4
+		maxAmount = 4
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = chakaradialDecoupler1-2_4294286914
+	partName = Part
+	persistentId = 4291911266
+	pos = 3.81003714,8.14400101,1.09424686
+	attPos = 0,0,0
+	attPos0 = 5.47119612E-07,-18.30163,3.06877708
+	rot = 1.86587471E-07,-0.923879623,7.72869839E-08,-0.382683516
+	attRot = 0,0,0,1
+	attRot0 = 1.42807806E-07,-0.707106888,1.42807707E-07,-0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 5
+	sidx = 0
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = xKWsrbGlobeX10Lx_4294286872
+	sym = chakaradialDecoupler1-2_4294288350
+	sym = chakaradialDecoupler1-2_4294287632
+	sym = chakaradialDecoupler1-2_4294286196
+	srfN = srfAttach,MonkeyCargoBoosterADJ_4294288618
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = xKWsrbGlobeX10Lx_4294286872
+	partName = Part
+	persistentId = 1529987635
+	pos = 4.84005737,7.72227859,2.12426519
+	attPos = 0,0,0
+	attPos0 = -1.45664704,-0.421719193,3.28302292E-07
+	rot = -1.91688443E-07,0.382683396,7.93999959E-08,0.923879743
+	attRot = 0,0,0,1
+	attRot0 = 3.90393495E-09,0.707106829,3.90391497E-09,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = 0
+	sqor = 5
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = XstrutConnectorMediumX_4294286778
+	link = XstrutConnectorMediumX_4294286716
+	link = XNP.lft.W375SRB_4294286654
+	link = xKosmos.SepRetroxMLS_4294286588
+	link = xKosmos.SepRetroxDUNA_4280588816
+	link = xKosmos.SepRetroxDUNA_4280586234
+	link = xKosmos.SepRetrox_4294131660
+	sym = xKWsrbGlobeX10Lx_4294287590
+	sym = xKWsrbGlobeX10Lx_4294288308
+	sym = xKWsrbGlobeX10Lx_4294286154
+	srfN = srfAttach,chakaradialDecoupler1-2_4294286914
+	attN = top,XNP.lft.W375SRB_4294286654_0|16.18125|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 48000
+		maxAmount = 48000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = XstrutConnectorMediumX_4294286778
+	partName = CompoundPart
+	persistentId = 247146970
+	pos = 3.90197802,20.0099354,1.18619037
+	attPos = 0,0,0
+	attPos0 = -8.83283576E-07,12.2875605,-1.32661104
+	rot = -9.61663318E-06,0.382683575,2.32165639E-05,-0.923879683
+	attRot = 0,0,0,1
+	attRot0 = -1.79158596E-05,0.707106829,1.79158505E-05,-0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = XstrutConnectorMediumX_4294287496
+	sym = XstrutConnectorMediumX_4294288214
+	sym = XstrutConnectorMediumX_4294286060
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294286872
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294288618
+		pos = -0.108890541,-0.00215700711,0.000211358041
+		rot = 0,-0.130525693,2.43703707E-05,0.991444945
+		dir = -0.99980545,-0.0196316577,0.00193375745
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = XstrutConnectorMediumX_4294286716
+	partName = CompoundPart
+	persistentId = 3873524690
+	pos = 3.90137196,1.56747437,1.1855824
+	attPos = 0,0,0
+	attPos0 = -8.82540689E-07,-6.1545372,-1.32748103
+	rot = -9.61663318E-06,0.382683575,2.32165639E-05,-0.923879683
+	attRot = 0,0,0,1
+	attRot0 = -1.79158596E-05,0.707106829,1.79158596E-05,-0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = XstrutConnectorMediumX_4294287434
+	sym = XstrutConnectorMediumX_4294288152
+	sym = XstrutConnectorMediumX_4294285998
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294286872
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294288618
+		pos = -0.108042471,-0.00249265763,0.000234603853
+		rot = 0,-0.130525693,2.43703707E-05,0.991444945
+		dir = -0.999739647,-0.0227169748,0.00216310006
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = XNP.lft.W375SRB_4294286654
+	partName = Part
+	persistentId = 2973303679
+	pos = 4.84004927,24.9536991,2.12425756
+	attPos = 0,0,0
+	attPos0 = -5.0575818E-07,17.2312393,9.0564572E-07
+	rot = 9.08053082E-08,-0.923879802,2.1922321E-07,0.382683158
+	attRot = 0,0,0,1
+	attRot0 = -1.69057395E-13,-1,2.98023402E-08,-5.08969322E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = XKW2mNoseConeX_4294286622
+	sym = XNP.lft.W375SRB_4294287372
+	sym = XNP.lft.W375SRB_4294288090
+	sym = XNP.lft.W375SRB_4294285936
+	attN = top,XKW2mNoseConeX_4294286622_0|1.05|0
+	attN = bottom,xKWsrbGlobeX10Lx_4294286872_0|-1.05|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = XKW2mNoseConeX_4294286622
+	partName = Part
+	persistentId = 2244479442
+	pos = 4.84004927,26.003643,2.12425756
+	attPos = 0,0,0
+	attPos0 = -3.37174811E-07,1.049999,1.01164596E-06
+	rot = 9.08052087E-08,-0.923879802,2.19223196E-07,0.382683158
+	attRot = 0,0,0,1
+	attRot0 = 1.06165396E-28,9.44808942E-09,-1.39946802E-21,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = XKW2mNoseConeX_4294287340
+	sym = XKW2mNoseConeX_4294288058
+	sym = XKW2mNoseConeX_4294285904
+	attN = bottom,XNP.lft.W375SRB_4294286654_0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxMLS_4294286588
+	partName = Part
+	persistentId = 444373498
+	pos = 3.90033317,-5.84121704,1.18454194
+	attPos = 0,0,0
+	attPos0 = -1.21845403E-06,-13.5632095,-1.32895195
+	rot = 0.593876243,0.707718253,0.245991558,0.293145955
+	attRot = 0,0,0.642787695,0.766044497
+	attRot0 = 0.454533309,0.541663587,0.454533309,0.541663587
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 1
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxMLS_4294287306
+	sym = xKosmos.SepRetroxMLS_4294288024
+	sym = xKosmos.SepRetroxMLS_4294285870
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294286872
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 2
+		maxAmount = 2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxDUNA_4280588816
+	partName = Part
+	persistentId = 623686458
+	pos = 4.84630203,23.6564045,0.757687092
+	attPos = 0,0,0
+	attPos0 = 0.97072351,15.9341297,-0.961884975
+	rot = -0.707122743,-1.34110451E-07,-2.68220901E-07,-0.707091033
+	attRot = -0.499999911,0.499999911,-0.499999911,-0.499999911
+	attRot0 = -0.653296411,0.270591915,-0.270604193,-0.653266728
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 2
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxDUNA_4280590844
+	sym = xKosmos.SepRetroxDUNA_4280588956
+	sym = xKosmos.SepRetroxDUNA_4280588886
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294286872
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxDUNA_4280586234
+	partName = Part
+	persistentId = 347460929
+	pos = 3.48113489,23.65275,2.13050842
+	attPos = 0,0,0
+	attPos0 = -0.965313613,15.93046,-0.956474602
+	rot = -0.500011683,-0.499989241,-0.500010431,0.499988943
+	attRot = -0.499999911,0.499999911,0.499999911,0.499999911
+	attRot0 = -0.270604014,-0.653267086,-0.653295815,0.270592093
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 3
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxDUNA_4280588250
+	sym = xKosmos.SepRetroxDUNA_4280586374
+	sym = xKosmos.SepRetroxDUNA_4280586304
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294286872
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xKosmos.SepRetrox_4294131660
+	partName = Part
+	persistentId = 3579145473
+	pos = 3.89603066,-5.52049255,1.18023849
+	attPos = 0,0,0
+	attPos0 = -8.34462753E-07,-13.2426844,-1.33505428
+	rot = 0.270605326,-0.270591259,-0.653298259,0.653264761
+	attRot = -0.707106709,0.707106709,0,0
+	attRot0 = 0.500012994,-0.499987155,-0.500012875,0.499987066
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 4
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetrox_4294134740
+	sym = xKosmos.SepRetrox_4294131808
+	sym = xKosmos.SepRetrox_4294131734
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294286872
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 4
+		maxAmount = 4
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = chakaradialDecoupler1-2_4294286196
+	partName = Part
+	persistentId = 3848249993
+	pos = 3.81003284,8.14400101,-3.2457006
+	attPos = 0,0,0
+	attPos0 = 3.06877589,-18.30163,-6.28554176E-07
+	rot = 1.86587229E-07,-0.923879445,-7.72870692E-08,0.382683635
+	attRot = 0,0,0,1
+	attRot0 = 2.01960702E-07,-1,-1.64445907E-14,6.62080382E-08
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 5
+	sidx = 0
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = xKWsrbGlobeX10Lx_4294286154
+	sym = chakaradialDecoupler1-2_4294288350
+	sym = chakaradialDecoupler1-2_4294287632
+	sym = chakaradialDecoupler1-2_4294286914
+	srfN = srfAttach,MonkeyCargoBoosterADJ_4294288618
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = xKWsrbGlobeX10Lx_4294286154
+	partName = Part
+	persistentId = 157208180
+	pos = 4.84004211,7.72227859,-4.27571297
+	attPos = 0,0,0
+	attPos0 = -1.45664406,-0.421719193,2.172889E-07
+	rot = -7.93999106E-08,0.923879623,1.91687988E-07,0.382683516
+	attRot = 0,0,0,1
+	attRot0 = 3.90394783E-09,0.707106888,3.90391497E-09,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = 0
+	sqor = 5
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = XstrutConnectorMediumX_4294286060
+	link = XstrutConnectorMediumX_4294285998
+	link = XNP.lft.W375SRB_4294285936
+	link = xKosmos.SepRetroxMLS_4294285870
+	link = xKosmos.SepRetroxDUNA_4280590844
+	link = xKosmos.SepRetroxDUNA_4280588250
+	link = xKosmos.SepRetrox_4294134740
+	sym = xKWsrbGlobeX10Lx_4294287590
+	sym = xKWsrbGlobeX10Lx_4294288308
+	sym = xKWsrbGlobeX10Lx_4294286872
+	srfN = srfAttach,chakaradialDecoupler1-2_4294286196
+	attN = top,XNP.lft.W375SRB_4294285936_0|16.18125|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 48000
+		maxAmount = 48000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = XstrutConnectorMediumX_4294286060
+	partName = CompoundPart
+	persistentId = 865906510
+	pos = 3.90196753,20.0099354,-3.33763361
+	attPos = 0,0,0
+	attPos0 = -8.83283576E-07,12.2875605,-1.32661104
+	rot = 9.61662681E-06,-0.382683069,2.32166385E-05,-0.923879862
+	attRot = 0,0,0,1
+	attRot0 = -1.79158596E-05,0.707106829,1.79158505E-05,-0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = XstrutConnectorMediumX_4294287496
+	sym = XstrutConnectorMediumX_4294288214
+	sym = XstrutConnectorMediumX_4294286778
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294286154
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294288618
+		pos = -0.108866632,-0.00215700595,0.000206463155
+		rot = 0,-0.13052538,2.44370567E-05,0.991445005
+		dir = -0.99980545,-0.0196316577,0.00193375745
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = XstrutConnectorMediumX_4294285998
+	partName = CompoundPart
+	persistentId = 1973685110
+	pos = 3.9013598,1.56747437,-3.33702874
+	attPos = 0,0,0
+	attPos0 = -8.82540689E-07,-6.1545372,-1.32748103
+	rot = 9.61662681E-06,-0.382683069,2.32166385E-05,-0.923879862
+	attRot = 0,0,0,1
+	attRot0 = -1.79158596E-05,0.707106829,1.79158596E-05,-0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = XstrutConnectorMediumX_4294287434
+	sym = XstrutConnectorMediumX_4294288152
+	sym = XstrutConnectorMediumX_4294286716
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294286154
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294288618
+		pos = -0.108013436,-0.002492656,0.000228993726
+		rot = 0,-0.13052538,2.44370567E-05,0.991445005
+		dir = -0.999739647,-0.0227169748,0.00216310006
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = XNP.lft.W375SRB_4294285936
+	partName = Part
+	persistentId = 2084126475
+	pos = 4.84003878,24.9536991,-4.2757082
+	attPos = 0,0,0
+	attPos0 = -5.0575818E-07,17.2312393,9.0564572E-07
+	rot = 2.19222017E-07,-0.382684588,9.08046971E-08,0.923879147
+	attRot = 0,0,0,1
+	attRot0 = -1.69057395E-13,-1,2.98023402E-08,-5.08969322E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = XKW2mNoseConeX_4294285904
+	sym = XNP.lft.W375SRB_4294287372
+	sym = XNP.lft.W375SRB_4294288090
+	sym = XNP.lft.W375SRB_4294286654
+	attN = top,XKW2mNoseConeX_4294285904_0|1.05|0
+	attN = bottom,xKWsrbGlobeX10Lx_4294286154_0|-1.05|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = XKW2mNoseConeX_4294285904
+	partName = Part
+	persistentId = 631444586
+	pos = 4.84003878,26.003643,-4.2757082
+	attPos = 0,0,0
+	attPos0 = -3.37174811E-07,1.049999,1.01164596E-06
+	rot = 2.1922186E-07,-0.382684588,9.0804555E-08,0.923879147
+	attRot = 0,0,0,1
+	attRot0 = 1.06165396E-28,9.44808942E-09,-1.39946802E-21,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = XKW2mNoseConeX_4294287340
+	sym = XKW2mNoseConeX_4294288058
+	sym = XKW2mNoseConeX_4294286622
+	attN = bottom,XNP.lft.W375SRB_4294285936_0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxMLS_4294285870
+	partName = Part
+	persistentId = 2085472890
+	pos = 3.90032101,-5.84121704,-3.33598757
+	attPos = 0,0,0
+	attPos0 = -1.21845403E-06,-13.5632095,-1.32895195
+	rot = 0.593876719,0.707717597,-0.245991588,-0.293146044
+	attRot = 0,0,0.642787695,0.766044497
+	attRot0 = 0.454533309,0.541663587,0.454533309,0.541663587
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 1
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxMLS_4294287306
+	sym = xKosmos.SepRetroxMLS_4294288024
+	sym = xKosmos.SepRetroxMLS_4294286588
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294286154
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 2
+		maxAmount = 2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxDUNA_4280590844
+	partName = Part
+	persistentId = 3649959702
+	pos = 3.47346592,23.6564045,-4.28195763
+	attPos = 0,0,0
+	attPos0 = 0.97072351,15.9341297,-0.961884975
+	rot = -0.500011384,-0.499989212,0.500011444,-0.499988288
+	attRot = -0.499999911,0.499999911,-0.499999911,-0.499999911
+	attRot0 = -0.653296411,0.270591915,-0.270604193,-0.653266728
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 2
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxDUNA_4280588956
+	sym = xKosmos.SepRetroxDUNA_4280588886
+	sym = xKosmos.SepRetroxDUNA_4280588816
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294286154
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxDUNA_4280588250
+	partName = Part
+	persistentId = 2874255769
+	pos = 4.84628677,23.65275,-2.91678572
+	attPos = 0,0,0
+	attPos0 = -0.965313673,15.93046,-0.956474721
+	rot = -0.707122386,1.34110451E-07,3.27825546E-07,0.707091391
+	attRot = -0.499999911,0.499999911,0.499999911,0.499999911
+	attRot0 = -0.270604014,-0.653267086,-0.653295815,0.270592093
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 3
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxDUNA_4280586374
+	sym = xKosmos.SepRetroxDUNA_4280586304
+	sym = xKosmos.SepRetroxDUNA_4280586234
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294286154
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 10
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xKosmos.SepRetrox_4294134740
+	partName = Part
+	persistentId = 208246031
+	pos = 3.89601493,-5.52045441,-3.3316853
+	attPos = 0,0,0
+	attPos0 = -1.38253114E-07,-13.2426462,-1.33505559
+	rot = -0.270604998,0.27059108,-0.653298199,0.653265059
+	attRot = -0.707106709,0.707106709,0,0
+	attRot0 = 0.500012934,-0.499987185,-0.500012934,0.499987096
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 6
+	sidx = 4
+	sqor = 3
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetrox_4294131808
+	sym = xKosmos.SepRetrox_4294131734
+	sym = xKosmos.SepRetrox_4294131660
+	srfN = srfAttach,xKWsrbGlobeX10Lx_4294286154
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 4
+		maxAmount = 4
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = CHAKAradialDecouplerXX_4293987528
+	partName = Part
+	persistentId = 3282446439
+	pos = -1.37083673,-2.58380127,-1.07572699
+	attPos = 0,0,0
+	attPos0 = -2.12903285,-29.0294571,-2.12903309
+	rot = -3.55271368E-14,1.49011612E-07,-2.31807633E-07,1
+	attRot = 0,0,0,1
+	attRot0 = 8.870893E-08,-0.382683486,-2.14162256E-07,0.923879504
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 5
+	resPri = 0
+	dstg = 5
+	sidx = 0
+	sqor = 4
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = CHAKAKWsrbGlobeIz_4293962722
+	sym = CHAKAradialDecouplerXX_4293958024
+	sym = CHAKAradialDecouplerXX_4293957968
+	sym = CHAKAradialDecouplerXX_4293957912
+	srfN = srfAttach,MonkeyCargoBoosterADJ_4294288618
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = CHAKAKWsrbGlobeIz_4293962722
+	partName = Part
+	persistentId = 3420527998
+	pos = -2.01440883,-2.75245667,-1.07572722
+	attPos = 0,0,0
+	attPos0 = -0.64357233,-0.168655694,-7.89761373E-07
+	rot = -1.49011555E-07,-0.70710659,-1.49011484E-07,0.707106888
+	attRot = 0,0,0,1
+	attRot0 = 1.49012003E-08,-0.707106829,1.49012038E-08,0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = 1
+	sqor = 5
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = xstrutConnectorc2x_4293917856
+	link = xKosmos.SepRetroxMLS_4293893754
+	sym = CHAKAKWsrbGlobeIz_4293956440
+	sym = CHAKAKWsrbGlobeIz_4293956356
+	sym = CHAKAKWsrbGlobeIz_4293956272
+	srfN = srfAttach,CHAKAradialDecouplerXX_4293987528
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0.233333334
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 1600
+		maxAmount = 1600
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xstrutConnectorc2x_4293917856
+	partName = CompoundPart
+	persistentId = 149299755
+	pos = -1.53082085,2.12855148,-1.07572913
+	attPos = 0,0,0
+	attPos0 = -9.42498161E-07,4.88100672,-0.483585507
+	rot = -3.57627925E-07,-1,1.27897692E-13,1.49011612E-07
+	attRot = 0,0,0,1
+	attRot0 = -1.03869596E-07,-0.707106829,1.03869652E-07,0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xstrutConnectorc2x_4293920256
+	sym = xstrutConnectorc2x_4293917790
+	sym = xstrutConnectorc2x_4293917724
+	srfN = srfAttach,CHAKAKWsrbGlobeIz_4293962722
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294288618
+		pos = -0.186180845,-0.00979608763,-0.00145389186
+		rot = 0,0,0,1
+		dir = -0.998599052,-0.0523354374,-0.007804072
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxMLS_4293893754
+	partName = Part
+	persistentId = 354502104
+	pos = -1.53292751,2.20145798,-1.07572794
+	attPos = 0,0,0
+	attPos0 = -1.00582803E-07,4.95391321,-0.481478631
+	rot = -1.78813934E-07,0,0.887010634,0.46174857
+	attRot = 0,0,-0.887010813,-0.46174863
+	attRot0 = 0.627211332,0.326505512,0.627211571,0.326505572
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 5
+	resPri = 0
+	dstg = 6
+	sidx = 1
+	sqor = 4
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxMLS_4293897084
+	sym = xKosmos.SepRetroxMLS_4293893680
+	sym = xKosmos.SepRetroxMLS_4293893606
+	srfN = srfAttach,CHAKAKWsrbGlobeIz_4293962722
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 2
+		maxAmount = 2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = CHAKAradialDecouplerXX_4293958024
+	partName = Part
+	persistentId = 636128884
+	pos = 1.64007318,-2.58380127,1.93518257
+	attPos = 0,0,0
+	attPos0 = -2.12903214,-29.0294571,2.12903357
+	rot = -1.63912702E-07,0.707106829,-1.63912617E-07,0.707106709
+	attRot = 0,0,0,1
+	attRot0 = -8.87088945E-08,0.382683337,-2.14162228E-07,0.923879564
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 5
+	resPri = 0
+	dstg = 5
+	sidx = 0
+	sqor = 4
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = CHAKAKWsrbGlobeIz_4293956440
+	sym = CHAKAradialDecouplerXX_4293987528
+	sym = CHAKAradialDecouplerXX_4293957968
+	sym = CHAKAradialDecouplerXX_4293957912
+	srfN = srfAttach,MonkeyCargoBoosterADJ_4294288618
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = CHAKAKWsrbGlobeIz_4293956440
+	partName = Part
+	persistentId = 2339436733
+	pos = 1.64007401,-2.75248718,2.57875562
+	attPos = 0,0,0
+	attPos0 = -0.643573403,-0.168686211,2.83122091E-07
+	rot = -2.10734072E-07,-2.98023224E-08,4.97379915E-14,1.00000012
+	attRot = 0,0,0,1
+	attRot0 = 1.49012092E-08,-0.707106888,1.49011878E-08,0.707106769
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = 1
+	sqor = 5
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = xstrutConnectorc2x_4293917790
+	link = xKosmos.SepRetroxMLS_4293893680
+	sym = CHAKAKWsrbGlobeIz_4293962722
+	sym = CHAKAKWsrbGlobeIz_4293956356
+	sym = CHAKAKWsrbGlobeIz_4293956272
+	srfN = srfAttach,CHAKAradialDecouplerXX_4293958024
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0.233333334
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 1600
+		maxAmount = 1600
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xstrutConnectorc2x_4293917790
+	partName = CompoundPart
+	persistentId = 1579559112
+	pos = 1.64007425,2.12852097,2.09516811
+	attPos = 0,0,0
+	attPos0 = -9.31323143E-08,4.88100672,-0.483584642
+	rot = -2.52881136E-07,-0.707106829,2.52881108E-07,0.707106888
+	attRot = 0,0,0,1
+	attRot0 = -1.03869617E-07,-0.707106769,1.0386961E-07,0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xstrutConnectorc2x_4293920256
+	sym = xstrutConnectorc2x_4293917856
+	sym = xstrutConnectorc2x_4293917724
+	srfN = srfAttach,CHAKAKWsrbGlobeIz_4293956440
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294288618
+		pos = -0.186191976,-0.00979608763,-0.00145412982
+		rot = 0,0,0,1
+		dir = -0.998599052,-0.0523354374,-0.007804072
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxMLS_4293893680
+	partName = Part
+	persistentId = 1284608685
+	pos = 1.64007497,2.20142746,2.09727502
+	attPos = 0,0,0
+	attPos0 = 9.20146078E-07,4.95391321,-0.481477946
+	rot = 0.627211332,0.326505661,0.627211392,0.326505691
+	attRot = 0,0,-0.887010813,-0.46174863
+	attRot0 = 0.627211392,0.326505542,0.627211452,0.326505572
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 5
+	resPri = 0
+	dstg = 6
+	sidx = 1
+	sqor = 4
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxMLS_4293897084
+	sym = xKosmos.SepRetroxMLS_4293893754
+	sym = xKosmos.SepRetroxMLS_4293893606
+	srfN = srfAttach,CHAKAKWsrbGlobeIz_4293956440
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 2
+		maxAmount = 2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = CHAKAradialDecouplerXX_4293957968
+	partName = Part
+	persistentId = 2087966765
+	pos = 4.65098,-2.58380127,-1.07573068
+	attPos = 0,0,0
+	attPos0 = 2.12903309,-29.0294571,2.12903261
+	rot = -2.31807633E-07,1,4.26325641E-14,-1.49011612E-07
+	attRot = 0,0,0,1
+	attRot0 = -2.14162256E-07,0.923879504,-8.87089229E-08,0.382683456
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 5
+	resPri = 0
+	dstg = 5
+	sidx = 0
+	sqor = 4
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = CHAKAKWsrbGlobeIz_4293956356
+	sym = CHAKAradialDecouplerXX_4293987528
+	sym = CHAKAradialDecouplerXX_4293958024
+	sym = CHAKAradialDecouplerXX_4293957912
+	srfN = srfAttach,MonkeyCargoBoosterADJ_4294288618
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = CHAKAKWsrbGlobeIz_4293956356
+	partName = Part
+	persistentId = 3642372358
+	pos = 5.2945528,-2.75248718,-1.07572925
+	attPos = 0,0,0
+	attPos0 = -0.643573105,-0.168686211,-1.6689296E-06
+	rot = -1.4901147E-07,0.707106888,1.49011555E-07,0.70710659
+	attRot = 0,0,0,1
+	attRot0 = 1.49011878E-08,-0.707106829,1.49012092E-08,0.707106769
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = 1
+	sqor = 5
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = xstrutConnectorc2x_4293920256
+	link = xKosmos.SepRetroxMLS_4293893606
+	sym = CHAKAKWsrbGlobeIz_4293962722
+	sym = CHAKAKWsrbGlobeIz_4293956440
+	sym = CHAKAKWsrbGlobeIz_4293956272
+	srfN = srfAttach,CHAKAradialDecouplerXX_4293957968
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0.233333334
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 1600
+		maxAmount = 1600
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xstrutConnectorc2x_4293920256
+	partName = CompoundPart
+	persistentId = 3326461818
+	pos = 4.81096458,2.12855148,-1.07572842
+	attPos = 0,0,0
+	attPos0 = -5.66244012E-07,4.88103724,-0.483586162
+	rot = 1.70530257E-13,1.49011612E-07,3.57627982E-07,1
+	attRot = 0,0,0,1
+	attRot0 = -1.0386961E-07,-0.707106769,1.03869681E-07,0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xstrutConnectorc2x_4293917856
+	sym = xstrutConnectorc2x_4293917790
+	sym = xstrutConnectorc2x_4293917724
+	srfN = srfAttach,CHAKAKWsrbGlobeIz_4293956356
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294288618
+		pos = -0.186187223,-0.00979608763,-0.00145591842
+		rot = 0,0,0,1
+		dir = -0.998599052,-0.0523354374,-0.007804072
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxMLS_4293893606
+	partName = Part
+	persistentId = 142568715
+	pos = 4.8130722,2.20142746,-1.07572901
+	attPos = 0,0,0
+	attPos0 = -4.0233121E-07,4.95391321,-0.481478631
+	rot = 0.887010813,0.461748689,2.98023224E-08,-8.94069672E-08
+	attRot = 0,0,-0.887010813,-0.46174863
+	attRot0 = 0.627211332,0.326505482,0.627211511,0.326505512
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 5
+	resPri = 0
+	dstg = 6
+	sidx = 1
+	sqor = 4
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxMLS_4293897084
+	sym = xKosmos.SepRetroxMLS_4293893754
+	sym = xKosmos.SepRetroxMLS_4293893680
+	srfN = srfAttach,CHAKAKWsrbGlobeIz_4293956356
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 2
+		maxAmount = 2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = CHAKAradialDecouplerXX_4293957912
+	partName = Part
+	persistentId = 1017496758
+	pos = 1.64006889,-2.58380127,-4.0866394
+	attPos = 0,0,0
+	attPos0 = 2.1290319,-29.0294571,-2.12903404
+	rot = -1.63912617E-07,0.707106709,1.63912702E-07,-0.707106829
+	attRot = 0,0,0,1
+	attRot0 = -2.14162228E-07,0.923879564,8.87088945E-08,-0.382683337
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 5
+	resPri = 0
+	dstg = 5
+	sidx = 0
+	sqor = 4
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = CHAKAKWsrbGlobeIz_4293956272
+	sym = CHAKAradialDecouplerXX_4293987528
+	sym = CHAKAradialDecouplerXX_4293958024
+	sym = CHAKAradialDecouplerXX_4293957968
+	srfN = srfAttach,MonkeyCargoBoosterADJ_4294288618
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = CHAKAKWsrbGlobeIz_4293956272
+	partName = Part
+	persistentId = 907012568
+	pos = 1.64006925,-2.75248718,-4.7302146
+	attPos = 0,0,0
+	attPos0 = -0.64357394,-0.168686211,-2.38418608E-07
+	rot = 4.26325641E-14,1.00000012,2.10734072E-07,2.98023224E-08
+	attRot = 0,0,0,1
+	attRot0 = 1.49012021E-08,-0.707106888,1.49011878E-08,0.707106769
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = 1
+	sqor = 5
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = xstrutConnectorc2x_4293917724
+	link = xKosmos.SepRetroxMLS_4293897084
+	sym = CHAKAKWsrbGlobeIz_4293962722
+	sym = CHAKAKWsrbGlobeIz_4293956440
+	sym = CHAKAKWsrbGlobeIz_4293956356
+	srfN = srfAttach,CHAKAradialDecouplerXX_4293957912
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0.233333334
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 1600
+		maxAmount = 1600
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = xstrutConnectorc2x_4293917724
+	partName = CompoundPart
+	persistentId = 3759235816
+	pos = 1.6400696,2.12852097,-4.24662638
+	attPos = 0,0,0
+	attPos0 = -2.53319655E-07,4.88100672,-0.483584434
+	rot = 2.52881136E-07,0.707106888,2.52881165E-07,0.707106829
+	attRot = 0,0,0,1
+	attRot0 = -1.03869617E-07,-0.707106769,1.03869603E-07,0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 6
+	resPri = 0
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xstrutConnectorc2x_4293920256
+	sym = xstrutConnectorc2x_4293917856
+	sym = xstrutConnectorc2x_4293917790
+	srfN = srfAttach,CHAKAKWsrbGlobeIz_4293956272
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294288618
+		pos = -0.186181366,-0.00979608763,-0.00145801913
+		rot = 0,0,0,1
+		dir = -0.998599052,-0.0523354374,-0.007804072
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = xKosmos.SepRetroxMLS_4293897084
+	partName = Part
+	persistentId = 2889291337
+	pos = 1.64006925,2.20145798,-4.24873161
+	attPos = 0,0,0
+	attPos0 = 2.68220703E-07,4.95394373,-0.481479317
+	rot = 0.627211452,0.326505691,-0.627211332,-0.326505631
+	attRot = 0,0,-0.887010813,-0.46174863
+	attRot0 = 0.627211332,0.326505542,0.627211511,0.326505572
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 5
+	resPri = 0
+	dstg = 6
+	sidx = 1
+	sqor = 4
+	sepI = 4
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = xKosmos.SepRetroxMLS_4293893754
+	sym = xKosmos.SepRetroxMLS_4293893680
+	sym = xKosmos.SepRetroxMLS_4293893606
+	srfN = srfAttach,CHAKAKWsrbGlobeIz_4293956272
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 2
+		maxAmount = 2
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}

@@ -1,0 +1,3 @@
+node_stack_top = 0.0, 0.495480, 0.0, 0.0, 1.0, 0.0 //feel free to round this off
+node_stack_bottom = 0.0, 0.0, 0.0, 0.0, -1.0, 0.0
+don't forget node_attach :P

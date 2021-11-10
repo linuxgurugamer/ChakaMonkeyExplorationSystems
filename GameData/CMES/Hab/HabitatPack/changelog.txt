@@ -1,0 +1,14 @@
+v0.4 / 23.04.2014
+- new part: Base Mount for F.L.A.T hab
+- redesigned PA550 model
+
+v0.3 / 06.02.2014
+- new part: F.L.A.T Inflatable hab
+
+v0.2 / 26.01.2014
+- new part: PA330 Inflatable hab
+- added props to Orbital Orb
+
+v0.1 / 01.01.2014
+- Release
+- Parts: PA550, Small Centrifuge, Orbital Orb
